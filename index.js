@@ -10,6 +10,11 @@ process.stdin.on('data', function(chunk) {
 });
 
 process.stdin.on('end', function() {
-    process.stdout.write(katex.renderToString(dataset));
+    display = true;
+    if(process.argv[2]=="i") display = false;
+    process.stdout.write(katex.renderToString(dataset,{
+        displayMode: display,
+        throwOnError: false
+    }));
     process.exit(0);
 });
