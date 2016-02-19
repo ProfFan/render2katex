@@ -1,9 +1,21 @@
 # render2katex
-a small node.js snippet to render something into LaTeX by KaTeX
+a small node.js snippet to render LaTeX into KaTeX HTML by KaTeX
+
+# Install
+
+First install node.js.
+
+Clone this repo.
+
+run `npm install` at the local repo.
 
 # Usage
 
-`echo "f(x)=\sin(x)" | node index.js`
+`echo "f(x)=\sin(x)" | node index.js d`
+
+The parameter can be `i`(inline) or `d`(display) corresponding to KaTeX modes.
+
+Result:
 
 ```
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">f(x)=\sin(x)
