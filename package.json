@@ -8,7 +8,7 @@
   },
   "author": "",
   "repository": "ProfFan/render2katex",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "katex": "^0.5.1"
   }
