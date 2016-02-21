@@ -11,7 +11,9 @@ process.stdin.on('data', function(chunk) {
 
 process.stdin.on('end', function() {
     display = true;
-    if(process.argv[2]=="i") display = false;
+    if(process.argv[2]=="i") {
+        display = false;
+    }
     process.stdout.write(katex.renderToString(dataset,{
         displayMode: display,
         throwOnError: false
