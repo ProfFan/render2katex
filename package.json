@@ -16,6 +16,6 @@
     "standard": "^3.0.0"
   },
   "scripts": {
-    "test": "standard && echo "sin(x)" | node index.js"
+    "test": "standard && echo \"sin(x)\" | node index.js"
   }
 }
