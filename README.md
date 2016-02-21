@@ -7,7 +7,7 @@ First install node.js.
 
 Clone this repo.
 
-run `npm install` at the local repo.
+run `npm install --production` at the local repo.
 
 # Usage
 
