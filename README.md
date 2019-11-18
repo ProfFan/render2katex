@@ -3,11 +3,24 @@ a small node.js snippet to render LaTeX into KaTeX HTML by KaTeX
 
 # Install
 
+## Experimental NPM install
+
+I've just published this on NPM, just type `npm install render2katex` and you should be all set.
+Note this is not tested by anyone, so if you can use the next method to play safe.
+
+## Source install
+
+This method is field proven.
+
 First install node.js.
 
 Clone this repo.
 
 run `npm install --production` at the local repo.
+
+### Testing source install
+
+`npm test` should give you a HTML string which should render `sin(x)`.
 
 # Usage
 
